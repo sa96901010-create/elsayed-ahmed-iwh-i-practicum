@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1= title
+    a(href="/") Return to the homepage
+    form.form-wrapper(action="/update-cobj", method="POST")
+      label(for="name") Name
+      input#name(type="text", name="name", required)
+      label(for="species") Species
+      input#species(type="text", name="species", required)
+      label(for="age") Age
+      input#age(type="number", name="age", required)
+      label(for="bio") Bio
+      textarea#bio(name="bio", rows="4")
+      button(type="submit") Create Pet

@@ -56,3 +56,35 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+.table {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid lightgrey;
+    padding: .6rem .75rem;
+    text-align: left;
+}
+
+.table th {
+    background: #f5f7fa;
+}
+
+.form-wrapper textarea {
+    width: 100%;
+    padding: .5rem;
+    margin-top: 5px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.form-wrapper button {
+    background-color: lightgrey;
+    border: none;
+    padding: .5rem 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
